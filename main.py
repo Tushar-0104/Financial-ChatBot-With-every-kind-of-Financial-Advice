@@ -698,7 +698,7 @@ METADATA_PATH = "metadata.json"
 CHAT_HISTORY_PATH = "chat_history.json"
 
 # Streamlit configuration
-st.set_page_config(page_title="Chat with Multiple PDFs", page_icon=":books:")
+st.set_page_config(page_title="FinanceFox", page_icon=":books:")
 
 # Load VectorStore
 def load_vectorstore():
@@ -879,7 +879,7 @@ def working_process(generation_config):
 # Main Function
 def main():
     load_dotenv()
-    st.header("Chat with Multiple PDFs :books:")
+    st.header("FinanceFox :books:")
 
     # Initialize session state variables if they do not exist
     if "vectorstore" not in st.session_state:
